@@ -1,0 +1,11 @@
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+jar {
+    baseName = 'jse-samples'
+    version =  '0.1.0'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
